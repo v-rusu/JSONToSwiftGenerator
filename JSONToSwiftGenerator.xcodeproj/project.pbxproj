@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		A75B27471D22905600DB6FC1 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B27461D22905600DB6FC1 /* main.swift */; };
+		A75B275B1D22907500DB6FC1 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B274E1D22907500DB6FC1 /* Mapper.swift */; };
+		A75B275C1D22907500DB6FC1 /* Generator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B27501D22907500DB6FC1 /* Generator.swift */; };
+		A75B275D1D22907500DB6FC1 /* HeaderGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B27511D22907500DB6FC1 /* HeaderGenerator.swift */; };
+		A75B275E1D22907500DB6FC1 /* SwiftStructExtensionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B27521D22907500DB6FC1 /* SwiftStructExtensionGenerator.swift */; };
+		A75B275F1D22907500DB6FC1 /* SwiftStructFileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B27531D22907500DB6FC1 /* SwiftStructFileGenerator.swift */; };
+		A75B27601D22907500DB6FC1 /* SwiftStructGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B27541D22907500DB6FC1 /* SwiftStructGenerator.swift */; };
+		A75B27611D22907500DB6FC1 /* FileCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B27561D22907500DB6FC1 /* FileCreator.swift */; };
+		A75B27621D22907500DB6FC1 /* Dictionary+JSONToSwiftGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B27581D22907500DB6FC1 /* Dictionary+JSONToSwiftGenerator.swift */; };
+		A75B27631D22907500DB6FC1 /* NSNumber+JSONToSwiftGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B27591D22907500DB6FC1 /* NSNumber+JSONToSwiftGenerator.swift */; };
+		A75B27641D22907500DB6FC1 /* String+JSONToSwiftGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75B275A1D22907500DB6FC1 /* String+JSONToSwiftGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +34,17 @@
 
 /* Begin PBXFileReference section */
 		A75B27431D22905600DB6FC1 /* JSONToSwiftGenerator */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = JSONToSwiftGenerator; sourceTree = BUILT_PRODUCTS_DIR; };
-		A75B27461D22905600DB6FC1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		A75B27461D22905600DB6FC1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = main.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B274E1D22907500DB6FC1 /* Mapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Mapper.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B27501D22907500DB6FC1 /* Generator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = Generator.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B27511D22907500DB6FC1 /* HeaderGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = HeaderGenerator.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B27521D22907500DB6FC1 /* SwiftStructExtensionGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SwiftStructExtensionGenerator.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B27531D22907500DB6FC1 /* SwiftStructFileGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SwiftStructFileGenerator.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B27541D22907500DB6FC1 /* SwiftStructGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = SwiftStructGenerator.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B27561D22907500DB6FC1 /* FileCreator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = FileCreator.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B27581D22907500DB6FC1 /* Dictionary+JSONToSwiftGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "Dictionary+JSONToSwiftGenerator.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B27591D22907500DB6FC1 /* NSNumber+JSONToSwiftGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "NSNumber+JSONToSwiftGenerator.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		A75B275A1D22907500DB6FC1 /* String+JSONToSwiftGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = "String+JSONToSwiftGenerator.swift"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +77,51 @@
 		A75B27451D22905600DB6FC1 /* JSONToSwiftGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				A75B27571D22907500DB6FC1 /* Extensions */,
+				A75B274D1D22907500DB6FC1 /* Mapper */,
+				A75B274F1D22907500DB6FC1 /* Generator */,
+				A75B27551D22907500DB6FC1 /* FileCreator */,
 				A75B27461D22905600DB6FC1 /* main.swift */,
 			);
 			path = JSONToSwiftGenerator;
+			sourceTree = "<group>";
+		};
+		A75B274D1D22907500DB6FC1 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				A75B274E1D22907500DB6FC1 /* Mapper.swift */,
+			);
+			path = Mapper;
+			sourceTree = "<group>";
+		};
+		A75B274F1D22907500DB6FC1 /* Generator */ = {
+			isa = PBXGroup;
+			children = (
+				A75B27501D22907500DB6FC1 /* Generator.swift */,
+				A75B27511D22907500DB6FC1 /* HeaderGenerator.swift */,
+				A75B27521D22907500DB6FC1 /* SwiftStructExtensionGenerator.swift */,
+				A75B27531D22907500DB6FC1 /* SwiftStructFileGenerator.swift */,
+				A75B27541D22907500DB6FC1 /* SwiftStructGenerator.swift */,
+			);
+			path = Generator;
+			sourceTree = "<group>";
+		};
+		A75B27551D22907500DB6FC1 /* FileCreator */ = {
+			isa = PBXGroup;
+			children = (
+				A75B27561D22907500DB6FC1 /* FileCreator.swift */,
+			);
+			path = FileCreator;
+			sourceTree = "<group>";
+		};
+		A75B27571D22907500DB6FC1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A75B27581D22907500DB6FC1 /* Dictionary+JSONToSwiftGenerator.swift */,
+				A75B27591D22907500DB6FC1 /* NSNumber+JSONToSwiftGenerator.swift */,
+				A75B275A1D22907500DB6FC1 /* String+JSONToSwiftGenerator.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +181,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A75B27631D22907500DB6FC1 /* NSNumber+JSONToSwiftGenerator.swift in Sources */,
+				A75B275D1D22907500DB6FC1 /* HeaderGenerator.swift in Sources */,
+				A75B275C1D22907500DB6FC1 /* Generator.swift in Sources */,
+				A75B275F1D22907500DB6FC1 /* SwiftStructFileGenerator.swift in Sources */,
+				A75B27641D22907500DB6FC1 /* String+JSONToSwiftGenerator.swift in Sources */,
+				A75B27621D22907500DB6FC1 /* Dictionary+JSONToSwiftGenerator.swift in Sources */,
+				A75B27601D22907500DB6FC1 /* SwiftStructGenerator.swift in Sources */,
+				A75B27611D22907500DB6FC1 /* FileCreator.swift in Sources */,
+				A75B275B1D22907500DB6FC1 /* Mapper.swift in Sources */,
 				A75B27471D22905600DB6FC1 /* main.swift in Sources */,
+				A75B275E1D22907500DB6FC1 /* SwiftStructExtensionGenerator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
