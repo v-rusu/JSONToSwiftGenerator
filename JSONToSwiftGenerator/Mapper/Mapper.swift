@@ -26,22 +26,20 @@ class Mapper {
             var type = typeOf(value)
             
             if type.containsString("Array") {
-                guard let firstItem = (value as! Array<AnyObject>).first else {
-                    break;
-                }
-                
-                var subtype = typeOf(firstItem)
-                
-                if subtype.containsString("Dictionary") {
-                    subtype = key.camelCased(withFormat: .Upper)
+                if let firstItem = (value as! Array<AnyObject>).first {
+                    var subtype = typeOf(firstItem)
                     
-                    let subMapper = Mapper(name: key.camelCased(withFormat: .Upper), jsonObject: firstItem as! [String: AnyObject])
-                    let subMap = subMapper.map()
+                    if subtype.containsString("Dictionary") {
+                        subtype = key.camelCased(withFormat: .Upper)
+                        
+                        let subMapper = Mapper(name: key.camelCased(withFormat: .Upper), jsonObject: firstItem as! [String: AnyObject])
+                        let subMap = subMapper.map()
+                        
+                        map.join(withOther: subMap)
+                    }
                     
-                    map.join(withOther: subMap)
+                    type = "Array<\(subtype)>"
                 }
-                
-                type = "Array<\(subtype)>"
             } else if type.containsString("Dictionary") {
                 type = key.camelCased(withFormat: .Upper)
                 
@@ -66,7 +64,7 @@ class Mapper {
             case let x where x is String: return String(String.self)
             case let x where x is [AnyObject]: return String([AnyObject].self)
             case let x where x is [String: AnyObject]: return String([String: AnyObject].self)
-            default: return ""
+            default: return String(AnyObject.self)
         }
     }
     
